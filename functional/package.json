@@ -1,0 +1,23 @@
+{
+  "name": "functional",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "config.js",
+  "scripts": {
+    "build": "babel src --watch -d build && cp src/config.json build/config.json",
+    "test:unit": "mocha test/unit",
+    "test:integration": "mocha test/integration"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-proposal-pipeline-operator": "^7.16.7",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0"
+  }
+}
